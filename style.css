@@ -1,5 +1,3 @@
-/* #1c2a33 - #18cfab - #9c5da5 - #11b0de - #d67f7f - #20bc9d - #bb8a36 - #2e4a5b */
-/* #1c2b33 - #22353f */
 /* ------------------------------- Start General ----------------------------------------- */
 * {
     -webkit-box-sizing: border-box;
@@ -188,7 +186,7 @@ a, a:focus, a:hover { color: inherit; text-decoration: none }
 .header {
     width: 100%;
     height: 100vh;
-    background-image: url("https://goo.gl/zgeBfK");
+    background-image: url("https://lh3.googleusercontent.com/BLn0Kpy-kTEMRWuZ2RIQx0Z-rYhyrRnICCIurXq-vAkxzwAOfZdgPRIe8INQvCh3Y5LKM0mzFUYCbO4Z0_ekczrpk8YFvYSm0nNSzp208ybH6KdwoTIpVx9mDvcKXmpyIKhooFlPZ5xfRtrtuqSIEkGSGGfz7EzzL4sU0JMb1a3BKM73Bj-oFJSvVeTMtFJd-PQPTB2G9d_HbptyZvrmoKarHvJX3CMNx_8si0lytZIwBFJ31Na9kM2coJYYXO8bHVGV9UIKUee-ec8tZEyDCvNRwf2QQnqMVUR0yB6i8E1BP10kofmcssmX29WBJ37qv9_fJ68qQVeyTr2RZkffEuGJKh0hXKEqaTfRRVAE1KWGySrh_CfsELNCOXj-8KVl5kGmsmnm_vutqYTXW8r0eGKide0yXePFLovNPR9V_Olhw8OCEjpnEzkUBjRaygKyQK9OWCT5AFr8E0u5HULG4qoLJ-PK-em59pBx8elmBamMrj9xMjHvmCjvxnVt-ERUvgNvSwkchorKHjtd58Uj38l468x1Kjtp256rWE3wK8a7R-mr5b16zNd181wETUGgj_R2NC0wQSL-F0JHfCpdpwSVtiHFbH3BcbdEoYMcMg=w1000-h600-no");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -327,9 +325,9 @@ a, a:focus, a:hover { color: inherit; text-decoration: none }
     background-size: cover;
     background-repeat: no-repeat;
 }
-.slider-parent .slider ul li:first-of-type, .slider-parent .slider ul li:nth-of-type(4) {background-image: url("https://goo.gl/zgeBfK")}
-.slider-parent .slider ul li:nth-of-type(3) {background-image: url("http://betterthansuccess.com/wp-content/uploads/2016/07/productivity-bts.jpeg")}
-.slider-parent .slider ul li:last-of-type, .slider-parent .slider ul li:nth-of-type(2) {background-image: url("http://www.dbsingh.com/manage/article/home-bg.jpg")}
+.slider-parent .slider ul li:first-of-type, .slider-parent .slider ul li:nth-of-type(4) {background-image: url("https://lh3.googleusercontent.com/BLn0Kpy-kTEMRWuZ2RIQx0Z-rYhyrRnICCIurXq-vAkxzwAOfZdgPRIe8INQvCh3Y5LKM0mzFUYCbO4Z0_ekczrpk8YFvYSm0nNSzp208ybH6KdwoTIpVx9mDvcKXmpyIKhooFlPZ5xfRtrtuqSIEkGSGGfz7EzzL4sU0JMb1a3BKM73Bj-oFJSvVeTMtFJd-PQPTB2G9d_HbptyZvrmoKarHvJX3CMNx_8si0lytZIwBFJ31Na9kM2coJYYXO8bHVGV9UIKUee-ec8tZEyDCvNRwf2QQnqMVUR0yB6i8E1BP10kofmcssmX29WBJ37qv9_fJ68qQVeyTr2RZkffEuGJKh0hXKEqaTfRRVAE1KWGySrh_CfsELNCOXj-8KVl5kGmsmnm_vutqYTXW8r0eGKide0yXePFLovNPR9V_Olhw8OCEjpnEzkUBjRaygKyQK9OWCT5AFr8E0u5HULG4qoLJ-PK-em59pBx8elmBamMrj9xMjHvmCjvxnVt-ERUvgNvSwkchorKHjtd58Uj38l468x1Kjtp256rWE3wK8a7R-mr5b16zNd181wETUGgj_R2NC0wQSL-F0JHfCpdpwSVtiHFbH3BcbdEoYMcMg=w1000-h600-no")}
+.slider-parent .slider ul li:nth-of-type(3) {background-image: url("https://lh3.googleusercontent.com/6jxbiEgemd7GaMhJPTdQp2bFD9ICBAMJWNxyyAsuZoLGx_Dpy34ZYfQCSfSdyewIRY71eVLScJjdfiSL9G6cGjS88ObpHG_fA8Zyvv_M75o3WwMMYwS9aOAQlvu2BtELxTap6tjtWMyTCvqyK8tzilg7N6PanQk0Urudp3rB5Wrj7L0HGR9-jrZp0wOE1XskKG_gxVngK2z4V33CQMpmUoh35Llvr7HsfQ_mEgEIYDFwoFd7ejWpCPfPKJce6WC8EuF0fBw4HVSmq1P3PokBllsLsn8_v02TtLfzhb59Ct-TG875b1dyzcejdg6uCCpR08SQ7CA08ZskOfqpQoseE3lZYp3jcyJoJlvEIeC7LSn_mgv0zcmXiRDeprTQtZjO6LHJJIVbc3J1bl89XcaxDuTA5e_tr4n9SzNm2uvsvuraLr0cgX4ct8RQGJROEOWl2cQdnDUrjnJStGgzXKQTtLVYKLUgPRcUaLCuQZUPuhVYLrMG6b3xSL3q3B11sj0OXJy0cx_qbPMCg4_AKPl_zN7fm-wWRDAVvl62A3ckZqzfktI5Gmk0FgEaPETSIpWFTpBt90CZPCwsXO2aEpcJ9e0Se3VhGjfrZKLs61G5CA=w1000-h600-no")}
+.slider-parent .slider ul li:last-of-type, .slider-parent .slider ul li:nth-of-type(2) {background-image: url("https://lh3.googleusercontent.com/81mqwnQfSu_u71LJRvvboscCj-eXyHYst7LJG7zRzckvtWAVnas4Qpek2pivpD_mbZBXonenOUwzAYnsc0XfKq6i-e_465QQCiAxB7Cy9WWtvJxPJh_ke0HaV92ngwHm_JpWIkya71oHrvsDwslVz2LAcf3Jq3ABcxQWrKnDqjH5y4azM43Pp6dkwpp224xlwzAdW5Tv1KPZcZcUE-TcRKtQTfY9YTmU1vElEFkylHfsjhuGRzfjfca4AtjRK0BEPaUChQaZNDd16y6ExTj6LPBgJ43GmW28uzoRb3uL87IsBezdW7Xf65U-OuiizBFIs1bXq8dAwfFIZrKD-QOrl8FXKr7bHIguVwHO_v9sYhvbny2GJwsymniqJQh3UqvYXIYd0PCLrq_ZinYspYFlWX7vmgaU_IfnukfM9oVlQq6Djb3TMHFx4eilt6Qzo_jjh2GmIQxc6jpTr3smf440km1YKHMSz98sWzmSDZEmDLM5immr7OS2le1SpdgQl5Yhjfi5XkcoUoSoz1B40Kzq1jAGH82JQOkQF0Tu2ug0qriQ0tfhUdANr5OSZXtcEvYFOcNXjOIyl0hUA6V18qDTvjyhY0_ygzXCBV10jvEK4A=w1000-h600-no")}
 .slider-parent .control .fa {position: absolute; bottom: -40px;}
 .slider-parent .control .fa {
     cursor: pointer;
@@ -476,7 +474,7 @@ a, a:focus, a:hover { color: inherit; text-decoration: none }
 .skills {
     width: 100%;
     min-height: 575px;
-    background-image: url("https://goo.gl/26HdHK");
+    background-image: url("https://lh3.googleusercontent.com/u1_vfWjUIKKBS0PpNKCgUAFWEzIo77a1sBywJOfVei6AXrIcI3FRIwOyLa9OfBVRXYkXSj6nyBkw4Pw2PQ4yKHvh5yyco9NaDaa4RHSzRb9TXhVrElBYPB_jMP9yBPNEkSrJHUiPf0d9xxP2hqrpoqod90MLm-MqFSmtlIZeLdkjVAC8_mLVrpV8KgAK2V2mJcnrQp5CYayBtrP4Ds7SBrdHIHz1xAWxE15QRfWk0bo0A6w_mWufmF18exueXuzRJmBBygqwHFSshhWodfYVyPeKdcnyf6j1FXOQGMM2HeTSpUwhR2pSIKUIjjO449dv8m2AAJrdupiQeC72ZHO7fDlwyjUqzgIaDDdOjAsc59J-Jbh3mMAAA0kMLq8avH5q5kcaj60zisKbmcNc-JgAT07zveefOc2OXG7fCE4Lkt9XZG68ZAaqgOKtTHlgYETAE0DapVQGV9ufifdHGajJxH6FgmGiFGchWN4Ni41inxqM2Z_N7RXeRTXd7b0SwbrktezzIQYBCHPhzC5dyNjyA39sKuEHOzswpEIJofXPwRHEjzjQAiM85zs6Bxw_1RI32_3ntNCSVrMQaAywAfvTL4oIIWlC4nD-b1Skf_SO1w=w562-h316-no");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -1032,7 +1030,7 @@ a, a:focus, a:hover { color: inherit; text-decoration: none }
 /* ------------------------------- End Tutorial ------------------------------------------ */
 /* ------------------------------- Start People Say ------------------------------------------ */
 .peoplesay {
-    background-image: url("https://goo.gl/THGoGA");
+    background-image: url("https://lh3.googleusercontent.com/H0wPFbQ_oSMn_Xc32YRFS-ZzHmgzUncgQZFAwYNQieUYoVzfJtasx71M6YUd4tYTSendjgYJTtlFJ9yf84U7Us2XzKcElcdvA4_UR4YybykIiMpOSt6mMD5X1A17xICgn_R4F7jyo2I_gAody4Ykbqn0ovYGV1Jp51-wLwBbQqudMKey5HpBWcSVijpbz2fH0a_lyuXvfc6YeKptD2xkldGyo1cxAluXedFy8w411cnHWjUxiXxg10Z5cTdtm5LNft-OZ1EsUAdpWaCMBesJ9UFMAZzVPv5CptCHhmpTMnOpO4I2C-STWjArE-U04BdMTeaaDVz46iFULvphHZqGB5NSGo5XxB3JYskal5opp7BnqZeect-AWZcoIfhcuv6vZ64zg63yNxKpUnRBLWiTaFDXvL15bPCpZLa-xtL2aAMoWBPehT_FXXXxGfhEwPpDQ4bClYZUJU7HuXTQ4x--d8uggbIOsGMZ3F_vqUqzc_8MvRxzr0eqrj_u5rtMKa74HWYDex2YViBUnaNWLM38BdRcaX03eqihEVM3UE1MXEf5d1rU-5UC6IkApsCUTCDFDxZzjVY6Uw6PHV0_wMS2KzvmIQeHYyBejGCIsqNMOg=s613-no");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -1111,9 +1109,9 @@ a, a:focus, a:hover { color: inherit; text-decoration: none }
     background-size: cover;
     background-position: center
 }
-.peoplesay .slidersay ol li:first-of-type {background-image: url("../images/logo.png")}
-.peoplesay .slidersay ol li:nth-of-type(2) {background-image: url("../images/logo.png")}
-.peoplesay .slidersay ol li:last-of-type {background-image: url("../images/logo.png")}
+.peoplesay .slidersay ol li:first-of-type {background-image: url("https://lh3.googleusercontent.com/r7iwdxtOVVTTV8ZIJeozidpCk9H59jZvoOhH2sEKqmHjidoH_e8268ZJQ7I7a2vJ1J-zMNCZPxQR93dgdsoTMr0dhaoIlKhdaLzX-Hoo1H0VE32b72ce7FoTZZR5dakp2UV7VW36JPYoMj_gXNsIa1MTQWgvOgZnkrzq5EXcWhHjJPcIoQNru6SIKPQNsHzcwMFI8z0OXo0pGc_aELkOuoAnlik_nb1WQzsIu0NGovhm5Xx1sD4cCPu2E55FkRM1b6Kvd4vhQCdQyjyYwkObQVVN83l6wfcp9b78Ber1AvsNUbbo280m4OqXmU9T80zzEzIyKagLGc8c8ouovrg7ADdFTl2d40o7WZ5WEBGPK4IirbtytXIiaYRDoV9LHRvsxvEGnqB5SoZcP9zu-smJff4cULuMi34BijwsQsfMgYsXwBFqmopw9CfgMIgrDk8g7UfHMqdRBFjKl9w2G025FQGmJx6xtMGNXD6FgWBrjUKigrXbOYPnqvjPpegxPh8_Zh42td5SLdlWE7WZXyfyZ0S9fzU3CXBj_ThKMwCilmOCq3iU-s5pXBaLOxwtKAP3uPmdz3x6qLrAeATw6IpXw-vA8XYw1L7gUEtPju_U6A=s296-no")}
+.peoplesay .slidersay ol li:nth-of-type(2) {background-image: url("https://lh3.googleusercontent.com/r7iwdxtOVVTTV8ZIJeozidpCk9H59jZvoOhH2sEKqmHjidoH_e8268ZJQ7I7a2vJ1J-zMNCZPxQR93dgdsoTMr0dhaoIlKhdaLzX-Hoo1H0VE32b72ce7FoTZZR5dakp2UV7VW36JPYoMj_gXNsIa1MTQWgvOgZnkrzq5EXcWhHjJPcIoQNru6SIKPQNsHzcwMFI8z0OXo0pGc_aELkOuoAnlik_nb1WQzsIu0NGovhm5Xx1sD4cCPu2E55FkRM1b6Kvd4vhQCdQyjyYwkObQVVN83l6wfcp9b78Ber1AvsNUbbo280m4OqXmU9T80zzEzIyKagLGc8c8ouovrg7ADdFTl2d40o7WZ5WEBGPK4IirbtytXIiaYRDoV9LHRvsxvEGnqB5SoZcP9zu-smJff4cULuMi34BijwsQsfMgYsXwBFqmopw9CfgMIgrDk8g7UfHMqdRBFjKl9w2G025FQGmJx6xtMGNXD6FgWBrjUKigrXbOYPnqvjPpegxPh8_Zh42td5SLdlWE7WZXyfyZ0S9fzU3CXBj_ThKMwCilmOCq3iU-s5pXBaLOxwtKAP3uPmdz3x6qLrAeATw6IpXw-vA8XYw1L7gUEtPju_U6A=s296-no")}
+.peoplesay .slidersay ol li:last-of-type {background-image: url("https://lh3.googleusercontent.com/r7iwdxtOVVTTV8ZIJeozidpCk9H59jZvoOhH2sEKqmHjidoH_e8268ZJQ7I7a2vJ1J-zMNCZPxQR93dgdsoTMr0dhaoIlKhdaLzX-Hoo1H0VE32b72ce7FoTZZR5dakp2UV7VW36JPYoMj_gXNsIa1MTQWgvOgZnkrzq5EXcWhHjJPcIoQNru6SIKPQNsHzcwMFI8z0OXo0pGc_aELkOuoAnlik_nb1WQzsIu0NGovhm5Xx1sD4cCPu2E55FkRM1b6Kvd4vhQCdQyjyYwkObQVVN83l6wfcp9b78Ber1AvsNUbbo280m4OqXmU9T80zzEzIyKagLGc8c8ouovrg7ADdFTl2d40o7WZ5WEBGPK4IirbtytXIiaYRDoV9LHRvsxvEGnqB5SoZcP9zu-smJff4cULuMi34BijwsQsfMgYsXwBFqmopw9CfgMIgrDk8g7UfHMqdRBFjKl9w2G025FQGmJx6xtMGNXD6FgWBrjUKigrXbOYPnqvjPpegxPh8_Zh42td5SLdlWE7WZXyfyZ0S9fzU3CXBj_ThKMwCilmOCq3iU-s5pXBaLOxwtKAP3uPmdz3x6qLrAeATw6IpXw-vA8XYw1L7gUEtPju_U6A=s296-no")}
 .peoplesay .slidersay ol li:hover, .peoplesay .slidersay ol li.active {
     -webket-transform: scale(1.3);
     -moz-transform: scale(1.3);
