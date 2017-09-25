@@ -1,0 +1,1327 @@
+/* #1c2a33 - #18cfab - #9c5da5 - #11b0de - #d67f7f - #20bc9d - #bb8a36 - #2e4a5b */
+/* #1c2b33 - #22353f */
+/* ------------------------------- Start General ----------------------------------------- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0
+}
+ul, ol { list-style: none }
+li { display: inline-block }
+h1, h2, h3, h4, h5, h6, ul, ol {margin: 0; padding: 0}
+a, a:focus, a:hover { color: inherit; text-decoration: none }
+/* Scroll */
+::-webkit-scrollbar { width: 5px;}
+::-webkit-scrollbar-button { width: 0px; height: 0px }
+::-webkit-scrollbar-thumb { background: #18cfab; border: 1px solid #18cfab; border-radius: 0px }
+::-webkit-scrollbar-thumb:hover { background: #18cfab; border-radius: 5px }
+::-webkit-scrollbar-thumb:active { background: #18cfab }
+::-webkit-scrollbar-track { background: #f9f9fb; border: 1px none #000 }
+::-webkit-scrollbar-track:hover { background: #f9f9fb }
+::-webkit-scrollbar-track:active { background: #fff }
+::-moz-focus-inner { padding: 0; border: 0 }
+/* Selection */
+::-moz-selection { background: #18cfab; color: #fff }
+::selection { background: #18cfab; color: #fff }
+/* ------------------------------- End General ----------------------------------------- */
+/* ------------------------------- Start logo-nav ------------------------------------------ */
+.navbar-custom {
+    width: 100%;
+    background: rgba(28, 42, 51, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    min-height: 80px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.navbar-custom.up {
+  top: -95px
+}
+.logo {
+    float: left;
+    font-size: 30px;
+    line-height: 27px;
+    padding-top: 7px
+}
+.logo img {
+    margin-right: 10px
+}
+.logo div {
+    padding-left: 15px
+}
+.logo div, .logo img {
+    float: left
+}
+.logo span:first-of-type {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+    display: inline-block
+}
+.logo span:nth-of-type(2) {
+    color: #18cfab;
+    font-weight: bold
+}
+.logo span:last-of-type {
+    color: #aaa;
+    text-transform: uppercase;
+    font-family: Impact, sans-serif;
+    font-size: 22px;
+}
+.logo-nav {
+    height: 70px;
+    position: relative
+}
+.logo-nav > .fa {display: none}
+.nav-two {
+    float: right;
+    position: relative
+}
+.nav-two li {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.nav-two li.slide {
+    width: 47px;
+    height: 4px;
+    background: #18cfab;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.nav-two li.active, .nav-two li:hover {
+    color: #18cfab
+}
+.nav-two li:first-of-type:hover ~ .slide,
+.nav-two li:first-of-type.active ~ .slide {
+    width: 48px; left: 10px
+}
+.nav-two li:nth-of-type(2):hover ~ .slide,
+.nav-two li:nth-of-type(2).active ~ .slide {
+    width: 55px; left: 80px
+}
+.nav-two li:nth-of-type(3):hover ~ .slide,
+.nav-two li:nth-of-type(3).active ~ .slide {
+    width: 45px; left: 160px
+}
+.nav-two li:nth-of-type(4):hover ~ .slide,
+.nav-two li:nth-of-type(4).active ~ .slide {
+    width: 43px; left: 230px
+}
+.nav-two li:nth-of-type(5):hover ~ .slide,
+.nav-two li:nth-of-type(5).active ~ .slide {
+    width: 100px; left: 300px
+}
+.nav-two li:nth-of-type(6):hover ~ .slide,
+.nav-two li:nth-of-type(6).active ~ .slide {
+    width: 67px; left: 425px
+}
+@media(max-width: 800px) {
+    .navbar-custom .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 0
+    }
+    .logo {width: 100%}
+    .nav-two {
+        width: 100%;
+        float: none;
+        position: absolute;
+        right: 0;
+        top: 83px;
+        display: none;
+        height: calc(100vh - 83px);
+        overflow-y: scroll
+    }
+    .nav-two li {
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        background: rgba(28, 42, 51, .85); /* HERE */
+        text-align: right;
+        margin-bottom: 2px;
+        font-size: 25px;
+        font-weight: normal;
+        padding-right: 40px;
+    }
+    .nav-two li:hover {
+        padding-right: 60px;
+        background: rgba(28, 42, 51, 1);
+        color: #18cfab
+    }
+    .nav-two li.slide {display: none}
+    .logo-nav > .fa.control {
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        color: #fff
+    }
+    .logo-nav > .fa:hover {cursor: pointer}
+}
+/* ------------------------------- End logo-nav ------------------------------------------ */
+/* ------------------------------- Start Header ------------------------------------------ */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://goo.gl/zgeBfK");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.header .overlay .text {
+    width: 100%;
+    min-width: 300px;
+    padding: 0 10px;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.header .overlay .text h3, .header .overlay .text h1 {
+    text-transform: uppercase;
+    font-weight: bold
+}
+.header .overlay .text h1 {
+    font-size: 55px;
+    margin: 15px 0 10px;
+    height: 55px;
+    font-weight: normal
+}
+.header .overlay .text h1:after {
+    content: "";
+    display: inline-block;
+    height: 45px;
+    border-left: 2px solid #aaa;
+    margin-left: 10px;
+    -webkit-animation: typs 1s infinite; /* Safari 4+ */
+    -moz-animation: typs 1s infinite; /* Fx 5+ */
+    -o-animation: typs 1s infinite; /* Opera 12+ */
+    animation: typs 1s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes typs {
+  0%,100%   { opacity: 0; }
+  50% { opacity: 1; }
+}
+@-moz-keyframes typs {
+  0%,100%   { opacity: 0; }
+  50% { opacity: 1; }
+}
+@-o-keyframes typs {
+  0%,100%   { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes typs {
+  0%,100%   { opacity: 0; }
+  50% { opacity: 1; }
+}
+.header .overlay .text p {
+    font-size: 25px;
+    color: #aaa
+}
+.header .overlay .text h3 span:last-of-type {color: #18cfab}
+.header .overlay .text a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.header .overlay .text a:first-of-type,
+.header .overlay .text a:last-of-type:hover {
+    background: #18cfab;
+}
+.header .overlay .text a:last-of-type,
+.header .overlay .text a:first-of-type:hover {
+    background: #11b0de;
+}
+@media(max-width:600px) {
+    .header .overlay .text h1 {
+        font-size: 50px
+    }
+    .header .overlay .text p,
+    .header .overlay .text span:first-of-type {
+        display: none
+    }
+}
+/* ------------------------------- End Header ------------------------------------------ */
+/* ------------------------------- Start Slider ------------------------------------------ */
+.container.slrd {
+    width: 100%;
+    margin-top: 30px;
+    height: 150px;
+    text-align: right;
+}
+.slider-parent {
+    width: 150px;
+    max-width: 700px;
+    padding: 0 15px;
+    position: relative;
+    display: inline-block
+}
+.slider-parent .slider {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #18cfab
+}
+.slider-parent:hover .slider {
+    border-color: #11b0de
+}
+.slider-parent .slider ul {
+    width: calc(100% * 7);
+    height: 100%;
+}
+.slider-parent .slider ul li {
+    width: calc(100% / 7);
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider-parent .slider ul li:first-of-type, .slider-parent .slider ul li:nth-of-type(4) {background-image: url("https://goo.gl/zgeBfK")}
+.slider-parent .slider ul li:nth-of-type(3) {background-image: url("http://betterthansuccess.com/wp-content/uploads/2016/07/productivity-bts.jpeg")}
+.slider-parent .slider ul li:last-of-type, .slider-parent .slider ul li:nth-of-type(2) {background-image: url("http://www.dbsingh.com/manage/article/home-bg.jpg")}
+.slider-parent .control .fa {position: absolute; bottom: -40px;}
+.slider-parent .control .fa {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: #18cfab;
+    color: #fff;
+    text-align: center;
+    right: 15px
+}
+.slider-parent:hover .control .fa, .slider-parent .control .fa:hover {
+    background: #11b0de;
+}
+/* ------------------------------- End Slider ------------------------------------------ */
+/* ------------------------------- Start Features ------------------------------------------ */
+.features ul {
+    width: 100%;
+    overflow: hidden
+}
+.features ul li {
+    width: 25%;
+    display: block;
+    float: left;
+    padding: 75px 15px 90px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase
+}
+.features ul li:first-of-type, .features ul li:nth-of-type(3) {background: #1c2a33; color: #18cfab; border-top: 5px solid #18cfab}
+.features ul li:last-of-type, .features ul li:nth-of-type(2) {background: #18cfab; color: #fff; border-top: 5px solid #fff}
+.features ul li:first-of-type:hover, .features ul li:nth-of-type(3):hover {color: #11b0de; border-top: 5px solid #11b0de}
+.features ul li:last-of-type:hover, .features ul li:nth-of-type(2):hover {background: #11b0de}
+.features ul li .fa {margin-bottom: 30px}
+.features ul li h6 {height: 50px; line-height: 20px}
+@media(max-width: 900px) {
+    .features ul li {width: 50%; padding: 50px 15px 75px}
+    .features ul li:first-of-type, .features ul li:last-of-type {background: #1c2a33; color: #18cfab;border-top:none}
+    .features ul li:nth-of-type(2), .features ul li:nth-of-type(3) {background: #18cfab; color: #fff;border-top:none}
+    .features ul li:first-of-type:hover, .features ul li:last-of-type:hover {color: #11b0de; background: #1c2a33; border-top: none}
+    .features ul li:nth-of-type(2):hover, .features ul li:nth-of-type(3):hover {background: #11b0de; color: #fff; border-top: none}
+}
+@media(max-width: 500px) {
+    .features ul li {padding: 40px 15px}
+    .features ul li .fa {margin-bottom: 15px}
+}
+/* ------------------------------- End Features ------------------------------------------ */
+/* ------------------------------- Start Retina ------------------------------------------ */
+.retina {
+    padding: 75px 0;
+    background: #fafafa
+}
+.retina h2 {
+    margin-bottom: 75px;
+    position: relative;
+    font-weight: bold;
+    color: #1c2b33
+}
+.retina h2.nicestyle:before, .retina h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.retina h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+.retina .item {
+    text-align: left;
+    width: 100%;
+    max-width: 345px;
+    padding: 10px 10px 0 25px;
+    margin: 15px 10px;
+    display: inline-block;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 5px
+}
+.retina .item:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0 2px 5px -2px #aaa;
+    -moz-box-shadow: 0 2px 5px -2px #aaa;
+    -o-box-shadow: 0 2px 5px -2px #aaa;
+    box-shadow: 0 2px 5px -2px #aaa;
+    background: #fff
+}
+.retina .item h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e4a5b;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.retina .item h5:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: 
+}
+.retina .item:hover h5 {
+    color: #18cfab
+}
+.retina .item h5 .fa {
+    width: 35px;
+    font-size: 25px;
+    color: #18cfab;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.retina .item:hover h5 .fa {
+    -webket-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.retina .item p {
+    color: #aaa;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.retina .item:hover p {
+    color: #555;
+}
+/* ------------------------------- End Retina ------------------------------------------ */
+/* ------------------------------- Start Skills ------------------------------------------ */
+.skills {
+    width: 100%;
+    min-height: 575px;
+    background-image: url("https://goo.gl/26HdHK");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.skills .overlay {
+    width: 100%;
+    background: rgba(28, 42, 51, 0.75);
+    padding: 75px 0 0;
+}
+.skills .overlay .container-skills {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 10px;
+    margin: auto;
+    overflow: hidden;
+}
+.skills .overlay .container-skills .first {float: right}
+.skills .overlay .container-skills .second {float: left}
+.skills .overlay .container-skills .first,
+.skills .overlay .container-skills .second {
+    width: 50%;
+}
+@media(max-width: 1000px) {
+    .skills .overlay .container-skills {overflow: auto}
+    .skills .overlay .container-skills .first,
+    .skills .overlay .container-skills .second {
+        width: 100%;
+        float: none;
+    }
+    .skills {
+        width: 100%;
+        height: auto
+    }
+}
+/* ------------------------------- End Skills ------------------------------------------ */
+/* ------------------------------- Start Skills => Second ------------------------------------------ */
+.skills .overlay .second .screens {
+    height: 500px;
+    position: relative;
+}
+.skills .overlay .second .screens > div {
+    border: 1px solid #ddd;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    border-bottom: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.skills .overlay .second .screens > div:hover ~ div {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+}
+.skills .overlay .second .screens > div:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 0 5px #eee;
+    -moz-box-shadow: inset 0 0 5px #eee;
+    -o-box-shadow: inset 0 0 5px #eee;
+    box-shadow: inset 0 0 5px #eee;
+    border-radius: 50%;
+    top: 10px;
+    left: calc(50% - 5px)
+}
+.skills .overlay .second .screens > div > .cover {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    overflow-y: scroll
+}
+.skills .overlay .second .screens .computer {
+    width: 70%;
+    height: 100%;
+    border-left: none;
+    border-radius: 0 10px 0 0;
+    padding: 25px 25px 0 0;
+    -webkit-box-shadow: 0 0 5px #555;
+    -moz-box-shadow: 0 0 5px #555;
+    -o-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555
+}
+.skills .overlay .second .screens .computer .cover {
+    border-left: none;
+}
+.skills .overlay .second .screens .iphone {
+    width: 50%;
+    height: 75%;
+    left: 40%;
+    border-radius: 15px 15px 0 0;
+    padding: 40px 15px 0;
+    -webkit-box-shadow: 0 0 5px #555;
+    -moz-box-shadow: 0 0 5px #555;
+    -o-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555;
+}
+.skills .overlay .second .screens .mobile {
+    width: 30%;
+    height: 55%;
+    right: 0;
+    border-radius: 15px 15px 0 0;
+    padding: 40px 10px 0;
+    -webkit-box-shadow: 0 0 5px #555;
+    -moz-box-shadow: 0 0 5px #555;
+    -o-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555;
+}
+@media(max-width: 550px) {
+    .skills .overlay .second .screens {height: 400px}
+    .skills .overlay .second .screens .computer {display: none}
+    .skills .overlay .second .screens .iphone {left: 0;width: 70%; height: 100%}
+    .skills .overlay .second .screens .mobile {right: 0; width: 50%; height: 80%}
+}
+/* ------------------------------- End Skills => Second ------------------------------------------ */
+/* +++++++++ START test-computer +++++++++ */
+.testcomputer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #ddd;
+}
+.testcomputer nav, .testcomputer footer {
+    padding: 10px;
+    color: #fff;
+    background: #797f9d
+}
+.testcomputer footer {height: 100px}
+.testcomputer header {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    background: #ff8686;
+    color: #fff;
+}
+.testcomputer main {
+    width: 100%;
+    padding: 10px;
+    background: #18cfab;
+    color: #fff
+}
+.testcomputer div {
+    overflow: hidden
+}
+.testcomputer div section {
+    width: 70%;
+    float: left;
+    background: #efefa9
+}
+.testcomputer div aside {
+    width: 30%;
+    float: left;
+    background: #eb93d3;
+    text-align: left
+}
+.testcomputer div section {
+    padding: 25px 0;
+    color: #ff8686
+}
+.iphone .testcomputer div aside, .mobile .testcomputer div aside {
+    width: 100%;
+    float: none;
+    background: #eb93d3;
+    text-align: left
+}
+.mobile .testcomputer div aside {height: 50px}
+.iphone .testcomputer div section, .mobile .testcomputer div section  {
+    width: 100%;
+    float: none
+}
+.mobile .testcomputer div section article {
+    width: 100%;
+    margin: 0 0 10px 0
+}
+.mobile .testcomputer div section {padding-left: 10px; padding-right: 10px}
+.testcomputer div section article {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px
+}
+.testcomputer div section article h6 {
+    margin: 0;
+    color: #444
+}
+.testcomputer div section article p {
+    color: #aaa;
+    font-size: 10px;
+    margin: 0
+}
+.testcomputer div aside {
+    background: #d4a8eb;
+    color: #fff;
+    height: 150px;
+    text-align: center;
+    padding: 10px
+}
+/* +++++++++ END test-computer +++++++++ */
+/* ------------------------------- Start Skills => Datatab ------------------------------------------ */
+.skills .datatab {
+    color: #fff;
+    position: relative;
+    margin: 0 25px 25px;
+}
+.skills .datatab h2 {
+    margin-bottom: 75px;
+    display: inline-block;
+    position: relative;
+}
+.skills .datatab h2.nicestyle:before, .skills .datatab h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.skills .datatab h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+.skills .datatab .ultab li {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold
+}
+.skills .datatab .ultab li:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #18cfab;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.skills .datatab .ultab li + li {
+    margin-left: 15px
+}
+.skills .datatab .ultab li:hover,
+.skills .datatab .ultab li.active {
+    color: #18cfab;
+    cursor: pointer
+}
+.skills .datatab .ultab li.active:before,
+.skills .datatab .ultab li:hover:before {
+    width: 100%
+}
+.skills .datatab div {
+    display: none;
+    padding: 20px 0 0;
+    max-width: 500px;
+}
+.skills .datatab div.scalable {
+    display: block;
+}
+.skills .datatab .one { /* SKILLS ONE */
+    max-width: 350px
+}
+.skills .datatab .one h6 {
+    display: inline-block;
+    font-weight: normal;
+    padding: 4px 15px;
+    margin: 5px 2px;
+    border-radius: 3px;
+    font-size: 14px;
+    opacity: .8;
+}
+.skills .datatab .one h6:hover {opacity: 1}
+.skills .datatab .two article { /* SKILLS TWO */
+    padding: 15px;
+    background: rgba(255,255,255,.1);
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    border-left: 5px solid rgba(255,255,255,.2);
+}
+.skills .datatab .two article:before {
+    content: "";
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255,255,255,.1) transparent;
+    position: absolute;
+    top: -24px;
+    left: 95px;
+}
+.skills .datatab .two article p {
+    color: #000;
+    color: #bbb;
+    -webkit-text-shadow: 0 0 1px #000;
+    -moz-text-shadow: 0 0 1px #000;
+    -o-text-shadow: 0 0 1px #000;
+    text-shadow: 0 0 1px #000;
+}
+.skills .datatab .two article p span {color: #ddd}
+.skills .datatab .two article ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #aaa;
+    color: #aaa;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.skills .datatab .two article ul li a:hover {
+    background: rgba(255,255,255,.2);
+    color: #eee
+}
+.skills .datatab .three { /* SKILLS THREE */
+    padding-top: 18px;
+    border-top: 3px solid #aaa;
+    position: relative;
+    max-width: 350px;
+    margin-top: 20px
+}
+.skills .datatab .three:before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #aaa transparent;
+    position: absolute;
+    top: -22px;
+    left: 185px;
+}
+.skills .datatab .three dt {
+    margin-bottom: 5px;
+    padding: 7px;
+    border-radius: 4px;
+    margin-left: 25px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #777;
+    background: rgba(255,255,255,.1);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.skills .datatab .three dt:hover {background: rgba(255,255,255,.2)}
+.skills .datatab .three dt .fa {
+    width: 30px;
+    color: #1c2a33;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ccc;
+}
+.skills .datatab .three dt h6 {
+    font-size: 14px;
+    padding-left: 30px;
+    color: #ccc;
+    font-size: 13px
+}
+.skills .datatab .three p {
+    color: #aaa;
+    font-style: italic;
+    font-size: 13px;
+    margin-left: 25px
+}
+.skills .datatab .three dl > h6, .skills .datatab .three dl dd {
+    color: #ddd;
+    font-size: 13px
+}
+.skills .datatab .three dl > h6 > .fa, .skills .datatab .three dl dd > .fa {
+    font-size: 10px;
+    position: relative;
+    top: -2px
+}
+/* ------------------------------- End Skills => Datatab ------------------------------------------ */
+/* ------------------------------- Start Work ------------------------------------------ */
+.work {
+    background: #f8fcfe;
+    padding: 75px 0;
+    border-bottom: 1px solid #eee
+}
+.work .container-custom {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: auto
+}
+.work h2 {
+    margin-bottom: 75px;
+    position: relative;
+    font-weight: bold;
+    color: #1c2b33
+}
+.work h2.nicestyle:before, .work h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.work h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+.work .ultab {font-size: 0}
+.work .ultab li {
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #4b6f84;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    position: relative
+}
+.work .ultab li + li {
+    border-left: none
+}
+.work .ultab li:hover, .work .ultab li.active {
+    color: #18cfab;
+}
+.work .datatab .ultab li:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #18cfab;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.work .datatab .ultab li.active:before,
+.work .datatab .ultab li:hover:before {
+    width: 100%
+}
+.work .datatab .ultab li:hover {color: #11b0de}
+.work .datatab .ultab li:hover:before {background: #11b0de}
+.work .datatab > div {
+    width: 100%;
+    border: 1px solid #f00
+}
+.work .datatab > div:not(:first-of-type) {
+    display: none
+}
+@media(max-width: 794px) {
+    .work .datatab {
+        overflow: hidden
+    }
+    .work .ultab {
+        float: left
+    }
+    .work .ultab li {
+        display: block;
+        width: 150px;
+        text-align: left
+    }
+    .work .datatab .ultab li:hover, .work .datatab .ultab li.active {padding-left: 20px}
+    .work .ultab li + li {
+        border-left: 1px solid #ccc;
+        border-top: none;
+    }
+    .work .datatab .ultab li:before {
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: -1px
+    }
+    .work .datatab .ultab li.active:before,
+    .work .datatab .ultab li:hover:before {
+        width: 4px
+    }
+    .work .datatab > div {
+        float: left;
+        width: calc(100% - 150px)
+    }
+}
+@media(max-width: 550px) {
+    .work .datatab .ultab {
+        border-top: 1px solid #eee
+    }
+    .work .ultab, .work .ultab li, .work .datatab > div {
+        width: 100%;
+    }
+    .work .ultab li {
+        text-align: center; 
+        background: #f7f7f7;
+        border-color: #fff;
+        padding: 10px
+    }
+    .work .datatab .ultab li.active:before,
+    .work .datatab .ultab li:hover:before {
+        width: 0
+    }
+    .work .datatab .ultab li:hover, .work .datatab .ultab li.active {
+        background: #fff;
+        padding-left: 10px;
+    }
+    .work .datatab .ultab li + li {border-color: #fff}
+    .work .datatab .ultab li:hover {background: #f3f3f3; color: #11b0de}
+}
+/* ------------------------------- End Work ------------------------------------------ */
+/* ------------------------------- Start Tutorial ------------------------------------------ */
+.tutorial {
+    padding: 75px 0;
+}
+.tutorial h2 {
+    margin-bottom: 75px;
+    position: relative;
+    font-weight: bold;
+    color: #1c2b33
+}
+.tutorial h2.nicestyle:before, .tutorial h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.tutorial h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+/* ------------------------------- End Tutorial ------------------------------------------ */
+/* ------------------------------- Start People Say ------------------------------------------ */
+.peoplesay {
+    background-image: url("https://goo.gl/THGoGA");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.peoplesay .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 75px 0;
+    background: rgba(28, 42, 51, 0.75);
+}
+.peoplesay h2 {
+    margin-bottom: 75px;
+    position: relative;
+    color: #fff
+}
+.peoplesay h2 + .fa {
+    color: #18cfab;
+    margin-bottom: 15px
+}
+.peoplesay h2.nicestyle:before, .peoplesay h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.peoplesay h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+.peoplesay .slidersay { /* SLIDER */
+    width: 100%;
+    max-width: 650px;
+    padding-bottom: 115px;
+    color: #eee;
+    margin: auto;
+    position: relative;
+    overflow: hidden
+}
+.peoplesay .slidersay ul {
+    width: 300%;
+    padding-bottom: 15px
+}
+.peoplesay .slidersay ul li {
+    width: calc(100% / 3);
+    display: block;
+    float: left;
+    border: 1px solid #f00
+}
+.peoplesay .slidersay ol {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.peoplesay .slidersay ol li {
+    border: 2px solid #18cfab;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 15px 15px;
+    -webkit-box-shadow: 0 0 0 5px rgba(24, 207, 171, 0.2);
+    -moz-box-shadow: 0 0 0 5px rgba(24, 207, 171, 0.2);
+    -o-box-shadow: 0 0 0 5px rgba(24, 207, 171, 0.2);
+    box-shadow: 0 0 0 5px rgba(24, 207, 171, 0.2);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center
+}
+.peoplesay .slidersay ol li:first-of-type {background-image: url("../images/logo.png")}
+.peoplesay .slidersay ol li:nth-of-type(2) {background-image: url("../images/logo.png")}
+.peoplesay .slidersay ol li:last-of-type {background-image: url("../images/logo.png")}
+.peoplesay .slidersay ol li:hover, .peoplesay .slidersay ol li.active {
+    -webket-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.peoplesay .slidersay ol li:hover {
+    border: 2px solid #11b0de;
+    -webkit-box-shadow: 0 0 0 5px #11b0de;
+    -moz-box-shadow: 0 0 0 5px #11b0de;
+    -o-box-shadow: 0 0 0 5px #11b0de;
+    box-shadow: 0 0 0 5px rgba(17, 176, 222, 0.2);
+}
+.peoplesay .slidersay .text p {
+    color: #aaa;
+}
+.peoplesay .slidersay .text a {
+    color: #18cfab;
+    font-weight: bold;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.peoplesay .slidersay .text a:hover {
+    color: #11b0de
+}
+.peoplesay .slidersay .text span {
+    color: #fff;
+    font-style: italic;
+    font-size: 13px
+}
+/* ------------------------------- End People Say ------------------------------------------ */
+/* ------------------------------- Start Contact us ------------------------------------------ */
+.contactus {
+    height: 100vh;
+    min-height: 600px
+}
+.contactus .container-fluid {
+    height: 100%
+}
+.contactus .contact {
+    padding-top: 75px;
+    width: 50%;
+    float: right;
+    padding-left: 15px
+}
+.contactus h2 {
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #1c2b33
+}
+.contactus h2.nicestyle:before, .contactus h2.nicestyle:after {
+    content: "";
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 45px);
+    border-top: 2px solid #18cfab;
+}
+.contactus h2.nicestyle:after {
+    bottom: -30px;
+    left: calc(50% - 15px);
+    border-top: 2px solid #11b0de;
+}
+.contactus .contact form {
+    width: 100%;
+    max-width: 400px;
+}
+.contactus .contact form div {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.contactus .contact form div .inpt {
+    width: 100%;
+    padding: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+.contactus .contact form div textarea {
+    resize: none;
+    height: 125px
+}
+.contactus .contact form div label {
+    position: absolute;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: -1
+}
+.contactus .contact form div label {
+    color: #aaa;
+    top: 0
+}
+.contactus .contact form div .inpt:focus {
+    border-color: #18cfab
+}
+.contactus .contact form button {
+    display: block;
+    width: 100%;
+    padding: 15px 7px 10px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    background: #18cfab;
+    color: #fff;
+    cursor: pointer
+}
+.contactus .contact form button:hover {
+    background: #11b0de
+}
+.contactus .map {
+    width: 50%;
+    height: 100%;
+    float: left
+}
+@media(max-width: 900px) {
+    .contactus {height: auto}
+    .contactus .contact, .contactus .map {
+        float: none;
+        width: 100%
+    }
+    .contactus .map {height: 350px}
+}
+/* ------------------------------- End Contact us ------------------------------------------ */
+/* ------------------------------- Start Footer ------------------------------------------ */
+.footer {
+    width: 100%;
+    height: 100vh;
+    background: #1c2b33;
+    padding: 75px 0
+}
+.footer h2 {
+    color: #fff
+}
+.copyright {
+    background: #22353f;
+}
+.copyright p {
+    color: #aeaeae;
+    font-size: 14px;
+    height: 65px;
+    line-height: 65px;
+    margin: 0
+}
+.copyright p a {
+    color: #18cfab;
+    text-decoration: underline;
+}
+.copyright p a:hover {
+    text-decoration: underline;
+    color: #11b0de;
+    text-decoration: none
+}
+.copyright p a:focus {
+    text-decoration: underline;
+}
+/* ------------------------------- End Footer ------------------------------------------ */
+/* ------------------------------- Start Go top ------------------------------------------ */
+.top .fa {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    background: #18cfab;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.top .fa:hover {
+    background: none;
+    border: 2px solid #18cfab;
+    color: #18cfab
+}
+/* ------------------------------- End Go top ------------------------------------------ */
+/* ------------------------------- Start Progress Body ------------------------------------------ */
+.progress-body {
+    width: 0;
+    height: 5px;
+    background: #18cfab;
+    background: -webkit-linear-gradient(left, #18cfab, #18cfab, #11b0de);
+    background: -o-linear-gradient(right, #18cfab, #18cfab, #11b0de);
+    background: -moz-linear-gradient(right, #18cfab, #18cfab, #11b0de);
+    background: linear-gradient(to right, #18cfab, #18cfab, #11b0de);
+    position: fixed;
+    z-index: 10
+}
+/* ------------------------------- End Progress Body ------------------------------------------ */
