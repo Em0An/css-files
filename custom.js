@@ -193,7 +193,7 @@ $(document).ready(function () {
     // Datatab ===============================================================================
     $('.datatab .ultab li').on('click', function () {
         $(this).addClass('active').siblings('li').removeClass('active');
-        $(this).parent('.ultab').parent('.datatab').find('div').hide();
+        $(this).parent('.ultab').parent('.datatab').find('>div').hide();
         $('.datatab div' + $(this).data('tab')).fadeIn();
         if ($(this).parent('.ultab').parent('.datatab').parent().parent().hasClass('work') && $(window).width() <= 550) {
             $('html, body').animate({scrollTop: workUltab.offset().top + workUltab.height()}, 500);
